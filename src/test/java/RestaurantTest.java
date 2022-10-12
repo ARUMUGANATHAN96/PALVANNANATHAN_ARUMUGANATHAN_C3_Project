@@ -77,6 +77,16 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //<<<<<<<<<<<<<<<<<<<<<<<Price>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//CO_08
+    @Test
+    public void Display_the_total_order_value_given_the_list_of_items() {
+
+        List<String> cart = new ArrayList<>();
+        cart.add("Sweet corn soup");
+        cart.add("Vegetable lasagne");
+        assertEquals(388,restaurant.calculateBill(cart));
+    }
+    //CO_08
 
 
 }
