@@ -10,7 +10,11 @@ public class Item {
     public String getName() {
         return name;
     }
-
+    //CO_10
+    public  int getPrice() {
+        return price;
+    }
+    //CO_10
     @Override
     public String toString(){
         return  name + ":"

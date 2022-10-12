@@ -75,5 +75,16 @@ public class Restaurant {
 
     }
 
+    //CO_09
+    public int calculateBill(List<String> Cart) {
+        //return findItemByName(vegetable_lasagne).getPrice()+findItemByName(sweet_corn_soup).getPrice();
+        // return 0;
+        int billAmount=0;
+        for(String item: Cart) {
+            billAmount+=findItemByName(item).getPrice();
+        }
+        return billAmount;
 
+    }
+    //CO_09
 }
